@@ -10,11 +10,11 @@ install:
 script:
   - yarn run build
 branches:
-  only: master
+  only: travis
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: master
+    branch: master-test
